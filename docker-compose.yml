@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  storage:
+    build: ./storage
+    ports:
+      - '8003:8003'
+
+  logging_service:
+    build: ./logging_service
+    ports:
+      - '8001:8001'
+
+  data_service:
+    build: ./data_service
+    ports:
+      - '8000:8000'
+    depends_on:
+      - storage
+      - logging_service
+
+  processing_service:
+    build: ./processing_service
+    ports:
+      - '8002:8002'
+    depends_on:
+      - logging_service
