@@ -34,7 +34,7 @@ payload=
 ### api key
 
 ```
-http://127.0.0.1:8000/generate_api_key
+http://127.0.0.1:8002/generate_api_key
 payload=
     {
 }
