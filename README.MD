@@ -43,7 +43,7 @@ headers=Authorization= Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkI
 
 ```
 
-### api key
+### log history
 
 this endpoint requires username and password which is from the .env
 username=shamil
